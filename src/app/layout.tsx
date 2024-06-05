@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} w-screen h-screen flex bg-gradient-to-r from-[#CDDBE1] to-[#75AABB]`}>
+      <body className={`${roboto.className} text-white w-screen h-[2600px] md:h-[1300px] flex bg-gradient-to-r from-[#CDDBE1] to-[#75AABB]`}>
         {children}
       </body>
     </html>
