@@ -6,6 +6,7 @@ import Link from "next/link";
 import { PriceServiceConnection } from "@pythnetwork/price-service-client";
 import PercentChange from './components/percentchange';
 import { getPrice, suiId, hsecs, dsecs, wsecs } from './components/percentchange';
+import Refbutton from './components/refbutton';
 
 export default function Beta(){
     return(
@@ -110,21 +111,11 @@ function About(){
 function Side(){
     return (
         <div className="p-2 flex flex-col place-content-evenly gap-6 h-1/4 w-5/6 mx-auto mb-2 md:mb-0 md:h-1/2 md:w-36 md:mr-6 md:place-content-start">
-            <button className="border rounded-full bg-[#6fbcf0] p-2 w-1/2 mx-auto text-lg font-bold shadow-md shadow-white md:w-full">
-                <Link href="https://app.rocketx.exchange/?ref=LuokCwb4">Bridge</Link>
-            </button>
-            <button className="border rounded-full bg-[#6fbcf0] p-2 w-1/2 mx-auto text-lg font-bold shadow-md shadow-white md:w-full">
-                <Link href="https://app.scallop.io/referral?ref=0x09e76ae0e03a7c1dd56c1c792532e7b7e34e15766f7e492aa81e74cbf4a52225">Scallop</Link>
-            </button>
-            <button className="border rounded-full bg-[#6fbcf0] p-2 w-1/2 mx-auto text-lg font-bold shadow-md shadow-white md:w-full">
-                <Link href="https://app.naviprotocol.io/?code=452936285846245376">Navi</Link>
-            </button>
-            <button className="border rounded-full bg-[#6fbcf0] p-2 w-1/2 mx-auto text-lg font-bold shadow-md shadow-white md:w-full">
-                <Link href="https://app.rocketx.exchange/?ref=LuokCwb4">Swap</Link>
-            </button>
-            <button className="border rounded-full bg-[#6fbcf0] p-2 w-1/2 mx-auto text-lg font-bold shadow-md shadow-white md:w-full">
-                <Link href="https://airdrop.suipad.xyz/suipad_season_1?code=lwtmfr8f1c05">SuiPad</Link>
-            </button>
+                <Refbutton href="https://app.rocketx.exchange/?ref=LuokCwb4" name='Bridge' />
+                <Refbutton href="https://app.scallop.io/referral?ref=0x09e76ae0e03a7c1dd56c1c792532e7b7e34e15766f7e492aa81e74cbf4a52225" name='Scallop' />
+                <Refbutton href="https://app.naviprotocol.io/?code=452936285846245376" name='Navi' />
+                <Refbutton href="https://app.rocketx.exchange/?ref=LuokCwb4" name='Swap' />
+                <Refbutton href="https://airdrop.suipad.xyz/suipad_season_1?code=lwtmfr8f1c05" name='SuiPad' />
         </div>
     );
 }
